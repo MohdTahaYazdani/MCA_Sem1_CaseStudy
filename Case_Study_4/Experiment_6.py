@@ -9,24 +9,21 @@ while True:
     choice = int(input("Enter your choice:"))
 # Add passengers
     if choice == 1:
-        passengers.append(input("Enter passenger name:").capitalize())
+        passengers.append(input("Enter passenger name:").capitalize().strip())
 # Remove passengers
     elif choice == 2:
-        name = input("Enter passenger name to remove:").capitalize()
+        name = input("Enter passenger name to remove:").capitalize().strip()
         if name in passengers:
             passengers.remove(name)
         else:
             print("Passenger is not found")
 # Search passengers
     elif choice == 3:
-        search = input("Enter passenger name to search:").capitalize()
-        for passenger in passengers:
-            if passenger == search:
-                print("Passenger is found")
-                break
-            else:
-                print("Passenger is not found")
-                break
+        search = input("Enter passenger name to search:").capitalize().strip()
+        if search in passengers :
+            print("Passenger is found")
+        else:
+            print("Passenger is not found")
 # Sort passengers
     elif choice == 4:
         passengers.sort()
