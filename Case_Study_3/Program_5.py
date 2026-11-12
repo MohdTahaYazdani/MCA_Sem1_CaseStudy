@@ -1,7 +1,7 @@
 # Library Catalog & Circulation Desk
 
 
-# TASK 1: Catalog stored in a dictionary
+# TASK 1: Catalog stored in a dictionary.
 catalog = {
     'B101': {'title': 'Python Fundamentals',     'author': 'Guido Rossum'},
     'B102': {'title': 'Data Science Essentials', 'author': 'Jane Walker'},
